@@ -3,14 +3,13 @@ import Cities from '../../libs/cities.json';
 import './search-city.scss';
 
 const SearchCity = (props) => {
-  const [cities] = useState(Cities);
   const [searchableCities, setSearchableCities] = useState(Cities);
   const [filteredCities, setFilteredCities] = useState(Cities);
   const [showResult, setShowResult] = useState(false);
   const [input, setInput] = useState('');
 
   useEffect(() => {
-    const newCities = cities.filter(
+    const newCities = Cities.filter(
       (ar) => !props.selectedCities.find((rm) => rm.name === ar.name)
     );
     setSearchableCities(newCities);

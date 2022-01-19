@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import useInterval from './libs/use-interval-hook';
 import SearchCity from './components/search-city/search-city';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
@@ -6,23 +7,11 @@ import './App.scss';
 
 function App() {
   const [timeNow, setTimeNow] = useState('');
-  const [timeInterval, setTimeInterval] = useState();
   const [selectedCities, setSelectedCities] = useState([]);
 
-  useEffect(() => {
+  useInterval(() => {
     updateTimeNow();
-
-    setTimeout(() => {
-      updateTimeNow();
-      setTimeInterval(setInterval(updateTimeNow, 60 * 1000));
-    }, (60 - new Date().getSeconds()) * 1000);
-
-    return () => clearInterval(timeInterval);
-  }, []);
-
-  useEffect(() => {
-    setSelectedCities([...selectedCities]);
-  }, [timeNow]);
+  }, 60 * 1000);
 
   const getFormateTime = (date) => {
     var h = date.getHours(),
@@ -71,7 +60,6 @@ function App() {
               type='text'
               value={timeNow}
               onChange={(e) => {
-                clearInterval(timeInterval);
                 setTimeNow(e.target.value);
               }}
             />
