@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Rio",
+    "tz": "America/Sao_Paulo"
+  },
+  {
+    "name": "Ponta Delgada",
+    "tz": "Atlantic/Azores"
+  },
+  {
+    "name": "London",
+    "tz": "Europe/London"
+  },
+  {
+    "name": "Hamburg",
+    "tz": "Europe/Berlin"
+  },
+  {
+    "name": "Kyiv",
+    "tz": "Europe/Kiev"
+  },
+  {
+    "name": "Moscow",
+    "tz": "Europe/Moscow"
+  },
+  {
+    "name": "Tehran",
+    "tz": "Asia/Tehran"
+  },
+  {
+    "name": "Beijing",
+    "tz": "Asia/Shanghai"
+  }
+]

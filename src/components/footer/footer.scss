@@ -1,0 +1,16 @@
+@import '../../libs/variables.scss';
+
+footer {
+  padding: 26px 0 30px;
+  background-color: #2e3a46;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
