@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TimeZoneConverter/static/css/main.4f16b8c1.css",
+    "main.js": "/TimeZoneConverter/static/js/main.7960d4ee.js",
+    "static/js/787.2a145557.chunk.js": "/TimeZoneConverter/static/js/787.2a145557.chunk.js",
+    "index.html": "/TimeZoneConverter/index.html",
+    "main.4f16b8c1.css.map": "/TimeZoneConverter/static/css/main.4f16b8c1.css.map",
+    "main.7960d4ee.js.map": "/TimeZoneConverter/static/js/main.7960d4ee.js.map",
+    "787.2a145557.chunk.js.map": "/TimeZoneConverter/static/js/787.2a145557.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f16b8c1.css",
+    "static/js/main.7960d4ee.js"
+  ]
+}
